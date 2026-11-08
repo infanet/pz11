@@ -55,3 +55,7 @@ if __name__ == "__main__":
     print(second_highest_salary(make_db([
         (1, "Аня", 300), (2, "Боря", 200), (3, "Вика", 300), (4, "Гоша", 100),
     ])))  # 200
+
+# SELECT MAX(salary) AS second_highest_salary
+# FROM employees
+# WHERE salary < (SELECT MAX(salary) FROM employees);
